@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
   schedule: 
-    - cron: '35 1 * * *'
+    - cron: '37 1 * * *'
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
               
           - name: Send mail
             if: always()
-            uses: sahidkhan.ses-smtp-user.20220412-131845/action-send-mail@v2
+            uses: dawidd6/action-send-mail@v2
             with:
     # mail server settings
               server_address: smtp.gmail.com
