@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
   schedule: 
-    - cron: '34 3 * * *'
+    - cron: '12 5 * * *'
 
 jobs:
   build:
@@ -30,9 +30,9 @@ jobs:
     # Required mail server port:
              server_port: 465
     # Optional (recommended): mail server username:
-             username: ${{secrets.EMAIL_USERNAME}}
+             username: ${{secrets.MAIL_USERNAME}}
     # Optional (recommended) mail server password:
-             password: ${{secrets.EMAIL_PASSWORD}}
+             password: ${{secrets.MAIL_PASSWORD}}
     # Required mail subject:
              subject: Github Actions job result
     # Required recipients' addresses:
