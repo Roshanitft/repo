@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
   schedule: 
-    - cron: '38 17 * * *'
+    - cron: '10 11* * *'
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
             uses: dawidd6/action-send-mail@v3
             with:
 # Required mail server address:
-             server_address: smtp.mailtrap.io
+             server_address: email-smtp.us-east-1.amazonaws.com
     # Required mail server port:
              server_port: 465
     # Optional (recommended): mail server username:
