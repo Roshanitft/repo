@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
   schedule: 
-    - cron: '13 11 * * *'
+    - cron: '14 11 * * *'
 
 jobs:
   build:
@@ -37,7 +37,7 @@ jobs:
              subject: Github Actions job result
     # Required recipients' addresses:
              to: roshanilalwani1111@gmail.com
-             from: khansahid@tftus.com # <khan.sahid@tftus.com>
+             from: khan.sahid@tftus.com # <khan.sahid@tftus.com>
     # Optional whether this connection use TLS (default is true if server_port is 465)
     # Optional plain body:
              body: Build job of ${{github.repository}} completed successfully!
